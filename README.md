@@ -7,7 +7,7 @@ Pre-commit scripts appropriate for PHP project. These hooks are made as custom p
 Just add to your `.pre-commit-config.yaml` file with the following
 
 ```yaml
-- repo: git@github.com:justin-at-demac/pre-commit-php.git
+- repo: git@github.com:funyx/pre-commit-php.git
   rev: master
   hooks:
   - id: php-lint
@@ -34,7 +34,7 @@ Just add to your `.pre-commit-config.yaml` file with the following
 ## php-lint
 
 ```yaml
-- repo: git@github.com:justin-at-demac/pre-commit-php.git
+- repo: git@github.com:funyx/pre-commit-php.git
   hooks:
   - id: php-lint
 ```
@@ -44,7 +44,7 @@ A bash script that runs `php -l` against stage files that are php. Assumes `php`
 ## php-lint-all
 
 ```yaml
-- repo: git@github.com:justin-at-demac/pre-commit-php.git
+- repo: git@github.com:funyx/pre-commit-php.git
   hooks:
   - id: php-lint-all
 ```
@@ -54,7 +54,7 @@ A systems hook that just runs `php -l` against stage files that have the `.php` 
 ## php-unit
 
 ```yaml
-- repo: git@github.com:justin-at-demac/pre-commit-php.git
+- repo: git@github.com:funyx/pre-commit-php.git
   hooks:
   - id: php-unit
 ```
@@ -68,7 +68,7 @@ Note in its current state, it will run the whole PHPUnit test as along as `.php`
 ## php-cs
 
 ```yaml
-- repo: git@github.com:justin-at-demac/pre-commit-php.git
+- repo: git@github.com:funyx/pre-commit-php.git
   hooks:
   - id: php-cs
     files: \.(php)$
@@ -86,7 +86,7 @@ If you have multiple standards or a comma in your `args` property, escape the co
 ## php-cbf
 
 ```yaml
-- repo: git@github.com:justin-at-demac/pre-commit-php.git
+- repo: git@github.com:funyx/pre-commit-php.git
   hooks:
   - id: php-cs
     files: \.(php)$
@@ -101,7 +101,7 @@ The `args` property in your hook declaration can be used for pass any valid PHP 
 If you have multiple standards or a comma in your `args` property, escape the comma character like so
 
 ```yaml
-- repo: git@github.com:justin-at-demac/pre-commit-php.git
+- repo: git@github.com:funyx/pre-commit-php.git
   hooks:
   - id: php-cs
     files: \.(php)$
@@ -113,7 +113,7 @@ To install PHP Codesniffer (phpcs & phpcbf), follow the [recommended steps here]
 ## php-cs-fixer
 
 ```yaml
-- repo: git@github.com:justin-at-demac/pre-commit-php.git
+- repo: git@github.com:funyx/pre-commit-php.git
   hooks:
   - id: php-cs-fixer
     files: \.(php)$
@@ -126,7 +126,7 @@ The tool will fail a build when it has made changes to the staged files. This al
 ## php-no-dumps
 
 ```yaml
-- repo: git@github.com:justin-at-demac/pre-commit-php.git
+- repo: git@github.com:funyx/pre-commit-php.git
   hooks:
   - id: php-no-dumps
 ```
@@ -135,7 +135,7 @@ A regex that checks that the symfony `dump` debug function isn't committed
 ## php-no-var_dumps
 
 ```yaml
-- repo: git@github.com:justin-at-demac/pre-commit-php.git
+- repo: git@github.com:funyx/pre-commit-php.git
   hooks:
   - id: php-no-var_dumps
 ```
@@ -144,7 +144,7 @@ A regex that checks that `var_dump` isn't committed
 ## php-no-exits
 
 ```yaml
-- repo: git@github.com:justin-at-demac/pre-commit-php.git
+- repo: git@github.com:funyx/pre-commit-php.git
   hooks:
   - id: php-no-exits
 ```
@@ -153,7 +153,7 @@ A regex that checks that `exit` and `die` aren't committed
 ## php-md
 
 ```yaml
-- repo: git@github.com:justin-at-demac/pre-commit-php.git
+- repo: git@github.com:funyx/pre-commit-php.git
   hooks:
   - id: php-md
     files: \.(php)$
@@ -167,7 +167,7 @@ The tool will fail a build when it has found issues that violate the configured 
 
 [PHPStan](https://github.com/phpstan/phpstan) focuses on finding errors in your code without actually running it. It catches whole classes of bugs even before you write tests for the code.
 ```yaml
-- repo: git@github.com:justin-at-demac/pre-commit-php.git
+- repo: git@github.com:funyx/pre-commit-php.git
   hooks:
   - id: php-stan
     files: \.(php)$
@@ -177,7 +177,7 @@ A bash script that will run the appropriate `phpstan` executable.
 
 ## php-cpd
 ```yaml
-- repo: git@github.com:justin-at-demac/pre-commit-php.git
+- repo: git@github.com:funyx/pre-commit-php.git
   hooks:
   - id: php-cpd
     files: \.(php)$
