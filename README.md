@@ -14,7 +14,10 @@ Just add to your `.pre-commit-config.yaml` file with the following
   - id: php-unit
   - id: php-cs
     files: \.(php)$
-    args: ["--standard=PSR2,EcgM2", "--severity=10", "--extensions=php,phtml", "-p"]
+    args: ["--standard=PSR12,Squiz", "--extensions=php,phtml", "-p"]
+  - id: php-cbf
+    files: \.(php)$
+    args: ["--standard=PSR12,Squiz", "--extensions=php,phtml", "-p"]
   - id: php-md
     files: \.(php)$
     args: ["codesize,controversial,design,naming,unusedcode"]

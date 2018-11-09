@@ -1,6 +1,6 @@
 # Pre-commit
 # @see http://pre-commit.com/
-- repo: git://github.com/justin-at-demac/pre-commit-hooks
+- repo: git://github.com/funyx/pre-commit-hooks
   rev: master
   hooks:
     - id: check-yaml
